@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدليل السياحي السوداني</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <h2 class="logo">🇸🇩 السودان</h2>
+
+    <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#places">الوجهات السياحية</a>
+        <a href="#about">عن السودان</a>
+        <a href="#contact">تواصل معنا</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <h1>اكتشف جمال السودان</h1>
+
+        <p>
+            من النيل إلى الصحراء، اكتشف تاريخاً عريقاً
+            وطبيعة ساحرة وثقافة أصيلة.
+        </p>
+
+        <a href="#places" class="btn">
+            اكتشف الوجهات السياحية
+        </a>
+    </div>
+</section>
+
+<section class="places" id="places">
+
+    <h2>أجمل الوجهات السياحية</h2>
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="ابحث عن وجهة سياحية..."
+        oninput="searchPlaces()"
+    >
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=600">
+            <div class="card-content">
+                <h3>أهرامات مروي</h3>
+                <p>شاهد عظمة الحضارة النوبية والتاريخ السوداني القديم.</p>
+                <button class="card-btn"
+                onclick="showDetails('أهرامات مروي','تقع في ولاية نهر النيل وتعد من أهم المواقع الأثرية في السودان.')">
+                اعرف المزيد
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=600">
+            <div class="card-content">
+                <h3>سواكن</h3>
+                <p>مدينة تاريخية جميلة على ساحل البحر الأحمر.</p>
+                <button class="card-btn"
+                onclick="showDetails('سواكن','مدينة سودانية تاريخية تتميز بمبانيها المرجانية ومينائها القديم.')">
+                اعرف المزيد
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600">
+            <div class="card-content">
+                <h3>جبل مرة</h3>
+                <p>مناظر طبيعية خلابة وجبال وشلالات في دارفور.</p>
+                <button class="card-btn"
+                onclick="showDetails('جبل مرة','منطقة جبلية تتميز بطبيعتها ومناخها المميز.')">
+                اعرف المزيد
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+
+    <h2>عن السودان</h2>
+
+    <p>
+        السودان بلد الحضارات والتاريخ العريق،
+        يتميز بتنوعه الثقافي والطبيعي،
+        ويضم العديد من المواقع السياحية والأثرية.
+    </p>
+
+    <div class="features">
+        <div>🏛️ <h3>تاريخ عريق</h3></div>
+        <div>🌿 <h3>طبيعة ساحرة</h3></div>
+        <div>❤️ <h3>ثقافة أصيلة</h3></div>
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+    <h2>تواصل معنا</h2>
+    <p>شكراً لزيارتك الدليل السياحي السوداني.</p>
+</section>
+
+<footer>
+    <p>© 2026 الدليل السياحي السوداني</p>
+    <p>صُنع بحب من أجل السودان 🇸🇩</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
